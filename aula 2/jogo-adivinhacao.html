@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adivinhação</title>
+    <style>
+        body {
+            font-family: "Roboto Mono", monospace;
+            text-align: center;
+            background-image: url("https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/background_mentalista.png");
+            background-color: rgba(21, 156, 168, 0.281);
+            background-size: cover;
+            background-position: center top;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .page-title {
+            color: #ffffff;
+            margin: 0 0 5px;
+        }
+
+        .page-subtitle {
+            color: #ffffff;
+            margin-top: 5px;
+        }
+
+        .page-logo {
+            width: 200px;
+        }
+
+        .page-subtitle {
+            color: #ffffff;
+            margin-top: 5px;
+            background-color: red;
+            font-weight: bold;
+            padding: 5px;
+            width: 200px;
+            text-align: center;
+            justify-content: center;
+            margin-left: 40%;
+        }
+
+        h2:hover {
+            background-color: rgb(60, 97, 62);
+        }
+
+        body>img {
+            margin: 0 10px;
+        }
+
+        img {
+            max-height: 350px;
+        }
+
+        .h3 {
+            color: #ffffff;
+            margin-top: 5px;
+            background-color: red;
+            font-weight: bold;
+            padding: 5px;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+        }
+
+        h3:hover {
+            color: rgb(248, 6, 175);
+            background-color: rgb(8, 224, 19);
+        }
+
+        .div-button {
+            background-color: black;
+            color: azure;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="page-title">
+            Jogo da adivinhação
+        </h1>
+        <h2 class="page-subtitle "><span>Projeto ImersãoDev_</span></h2>
+        <h3 class="h3">Neste jogo,você tentará adivinhar qual o número secreto,você terá 3 tentativas!!!</h3>
+    </div>
+    <div>
+        <label for="aposta" class="div-button">Digite sua tentativa abaixo</label><br><br>
+        <input type="text" id="aposta">
+        <button onclick="validarAposta()">coloque sua tentativa aqui</button>
+    </div>
+    <img src="https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/Ilustra%C3%A7%C3%A3o-c%C3%A9rebro+1.png">
+    <script>
+
+
+        var numeroSecreto = parseInt(Math.random() * 1001);
+        function validarAposta() {
+
+            var aposta = document.getElementById('aposta').value;
+
+            if (aposta == numeroSecreto) {
+                alert('Parabéns! Você acertou o número secreto...');
+            } else if (aposta > numeroSecreto) {
+                alert('Número incorreto,o número é menor...');
+            } else if (aposta < numeroSecreto) {
+                alert('Número incorreto,o número é maior..');
+            }
+
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

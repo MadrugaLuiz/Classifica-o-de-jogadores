@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor</title>
+    <style>
+        body {
+            font-family: "Roboto Mono", monospace;
+            text-align: center;
+            background-image: url("https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/Background.png");
+            background-color: #000000;
+            background-size: cover;
+            background-position: center top;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .page-title {
+            color: #ffffff;
+            margin: 0 0 5px;
+        }
+
+        .page-subtitle {
+            color: #ffffff;
+            margin-top: 5px;
+            background-color: red;
+            font-weight: bold;
+            padding: 5px;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+        }
+
+        h2:hover {
+            background-color: rgb(170, 170, 71);
+
+        }
+
+        .page-logo {
+            width: 200px;
+        }
+
+        body>img {
+            margin: 0 10px;
+        }
+
+        img {
+            max-height: 250px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+        <h1 class="page-title">
+            Conversor de moedas
+        </h1>
+        <h2 class="page-subtitle "><span>Projeto ImersãoDev_</span></h2>
+    </div>
+    <img src="https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/Convers%C3%A3o+1.png">
+    
+    <script>
+        var valorEmDolar = 30;
+        var cotacaoDolar = 5.32;
+        var valorEmReal = valorEmDolar * cotacaoDolar;
+        valorEmReal = valorEmReal.toFixed(2);
+
+        alert('R$' + valorEmReal );
+
+        // quero add um botão para entrada de dados e estilizar eles
+        //além disso,quero adicionar outras funções,como conversor de metros para km
+        // e autonomia de combustível de um veículo
+    </script>
+</body>
+
+</html>

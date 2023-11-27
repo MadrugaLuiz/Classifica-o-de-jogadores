@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de filmes</title>
+    <style>
+        body {
+            font-family: "Roboto Mono", monospace;
+            text-align: center;
+            background-image: url("https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/background-aluraflix.png");
+            background-color: #000000;
+            background-size: cover;
+            background-position: center top;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .page-title {
+            color: #ffffff;
+            margin: 0 0 5px;
+            background-color: red;
+            font-family: "Roboto Mono", monospace;
+        }
+
+        .page-subtitle {
+            color: #ffffff;
+            margin-top: 5px;
+        }
+
+        body>img {
+            margin: 0 10px;
+        }
+
+        img {
+            max-height: 250px;
+        }
+
+        .div-js {
+            color: antiquewhite;
+            border: solid;
+            border-color: red;
+
+
+        }
+        h2{
+            color: azure;
+            background-color: green;
+        }
+        var nomesFilmes {
+            color: beige;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="page-title">
+            Filmes-flix
+        </h1>
+        <h2>Catálogo de filmes</h2>
+       
+    </div>
+
+
+    <script>
+
+        var listaFilmes = [
+            "https://www.claquete.com/fotos/filmes/poster/14794_medio.jpg",
+            "https://cinepop.com.br/wp-content/uploads/2016/05/lardascriancaspeculiares_2.jpg", "https://www.ucicinemas.com.br/Content/Upload/Filmes/Posters/11620/filme_11620.jpg",
+            "https://cinebuzz.uol.com.br/media/uploads/terrifier_2_poster_oficial.jpg", "https://cinema10.com.br/upload/filmes/filmes_16093_01.jpg",
+            "https://musicart.xboxlive.com/7/28f95d00-0000-0000-0000-000000000002/504/image.jpg"
+        ];
+        var nomesFilmes = [
+            "Super Mario Bros : o filme",
+            "Lar das crianças espetaculares",
+            "O som da Liberdade",
+            "Terrifier 2",
+            "Gato de botas 2",
+            "Sonic 2 "
+        ];
+
+        for (i = 0; i < listaFilmes.length; i++) {
+            document.write("<div>");
+            document.write("<img src =" + listaFilmes[i] + ">");
+            document.write("<p>" + nomesFilmes[i] + "</p>");
+            document.write("</div>");
+
+        }
+    </script>
+</body>
+
+</html>
